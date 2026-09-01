@@ -1,0 +1,21 @@
+const articles = [
+  { kind: 'LOCAL MAGAZINE · CULTURE & ART', title: '고유함이 피어나는 곳, 제천', note: '공간과 사람, 지역의 이야기를 천천히 기록합니다.', href: 'https://pccf.notion.site/2025' },
+  { kind: 'LOCAL MAGAZINE · CULTURE & ART', title: '여름방학 영수증', note: '지나간 계절에 남은 감각과 장면을 모읍니다.', href: 'https://pccf.notion.site/2026-394878809c8a807f8daecbc3036b53c3' },
+  { kind: 'PERSONAL ESSAY', title: '일하면서도 행복할 수 있을까?', note: '일과 삶 사이에서 오래 질문해 온 이야기입니다.', href: 'https://brunch.co.kr/@kkobuksee/2' },
+  { kind: 'PERSONAL ESSAY', title: '무음과 방음에서 해방된 세상', note: '나를 둘러싼 환경과 관계를 다른 감각으로 바라봅니다.', href: 'https://brunch.co.kr/@kkobuksee/4' },
+  { kind: 'BRANDED ARTICLE · HR & ORGANIZATION', title: '조직을 ‘커뮤니티’로 보면 달라지는 것들', note: '조직과 구성원의 성장을 연결해 온 경험을 씁니다.', href: 'https://blog.clap.company/organizational_culture_community/' },
+  { kind: 'BRANDED ARTICLE · HR & ORGANIZATION', title: '요즘 애들의 퇴사를 막으려면?', note: '일하는 사람들의 목소리에서 출발한 조직 이야기.', href: 'https://blog.clap.company/stay_interview/' },
+  { kind: 'BRANDED ARTICLE · HR & ORGANIZATION', title: '구성원이 주도적인 조직문화 만들기', note: '주도성과 연결을 만드는 조직문화의 방법을 이야기합니다.', href: 'https://blog.clap.company/organizational_democracy/' },
+  { kind: 'BRANDED ARTICLE · HR & ORGANIZATION', title: '조직학습을 촉진하는 도구, 피드백', note: '성장하는 조직을 위한 피드백의 역할을 살펴봅니다.', href: 'https://blog.clap.company/ai_feedback/' },
+];
+
+export default function Home() {
+  return <main>
+    <nav className="nav-wrap" aria-label="주요 메뉴"><a className="wordmark" href="#top">mandu<span>.</span></a><div className="nav-links"><a href="#about">about</a><a href="#writing">writing</a><a href="mailto:manduscribs@gmail.com">contact</a></div></nav>
+    <section id="top" className="hero"><p className="eyebrow">WRITER · RECORDER · STORYTELLER</p><h1>스쳐 지나가는 장면을<br /><em>오래 남는 이야기로.</em></h1><div className="hero-bottom"><p>글과 그림, 사진과 영상으로<br />사람과 공간, 일과 삶을 기록합니다.</p><a className="round-link" href="#writing" aria-label="글 목록으로 이동">↓</a></div><div className="hero-portrait"><img src="/mandu-portrait.jpg" alt="mandu 캐릭터 일러스트" /></div></section>
+    <section id="about" className="about-section"><p className="section-number">01 / WHO I AM</p><div className="about-grid"><h2>경계 사이를<br />좋아하는 사람</h2><div className="about-copy"><p>문학과 교육학을 공부했습니다. 에세이와 비평, 논문과 르포 사이를 오가며 인문학, 사회과학, 예술이 만나는 글쓰기를 좋아합니다.</p><p>오랫동안 서울에서 HR 담당자로 일하며 조직과 구성원의 성장을 연결했습니다. 이제 평택에서 기록자이자 이야기꾼으로, 지역과 사람, 일과 삶, 문화예술의 현장을 들여다봅니다.</p></div></div><div className="principles"><div><b>01</b><span>눈여겨보기</span><p>작고 평범한 장면 안의 고유함을 발견합니다.</p></div><div><b>02</b><span>다정하게 기록하기</span><p>사람과 공간의 결을 다양한 매체로 담습니다.</p></div><div><b>03</b><span>느슨하게 연결하기</span><p>이야기가 서로의 삶에 작은 힘이 되기를 바랍니다.</p></div></div></section>
+    <section id="writing" className="writing-section"><div className="writing-head"><p className="section-number">02 / SELECTED WRITING</p><h2>읽고 싶은 이야기를<br /><em>골라보세요.</em></h2></div><div className="article-list">{articles.map((article, index) => <a className="article" key={article.title} href={article.href} target="_blank" rel="noreferrer"><span className="article-index">{String(index + 1).padStart(2, '0')}</span><div><p className="article-kind">{article.kind}</p><h3>{article.title}</h3></div><p className="article-note">{article.note}</p><span className="arrow" aria-hidden="true">↗</span></a>)}</div><a className="academic-card" href="https://www.kci.go.kr/kciportal/ci/sereArticleSearch/ciSereArtiView.kci?sereArticleSearchBean.artiId=ART003292987" target="_blank" rel="noreferrer"><p className="section-number">03 / ACADEMIC WRITING</p><h3>공유리더십과 혁신적 업무행동 간 관계에서<br />장인적 학습의 매개효과</h3><p>국내 스타트업 종사자를 중심으로</p><span>논문 보기 ↗</span></a></section>
+    <section className="closing"><p className="eyebrow">LET&apos;S MAKE A SMALL CONNECTION</p><h2>이야기가 필요한 곳에<br /><em>mandu가 있습니다.</em></h2><div className="contact-links"><a href="mailto:manduscribs@gmail.com"><small>EMAIL</small>manduscribs@gmail.com <span>↗</span></a><a href="https://www.instagram.com/manduscribs/" target="_blank" rel="noreferrer"><small>INSTAGRAM</small>@manduscribs <span>↗</span></a><a href="https://brunch.co.kr/@kkobuksee" target="_blank" rel="noreferrer"><small>BRUNCH</small>@kkobuksee <span>↗</span></a></div></section>
+    <footer><span>© MANDU / SOOIN KIM</span><a href="https://www.instagram.com/manduscribs/" target="_blank" rel="noreferrer">DRAWING · PHOTO · SHORT VIDEO ON INSTAGRAM ↗</a></footer>
+  </main>;
+}
