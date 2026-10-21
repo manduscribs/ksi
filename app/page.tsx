@@ -14,7 +14,7 @@ const localRecords = [
   { period: '2026.06 – 현재', title: '어반스케쳐스 평택', role: '현장 드로잉 기록가 · 모임 운영진', description: '지역을 관찰하고 그림으로 그리는 현장 드로잉 기록가로서 활동하며 정기 모임을 운영하고 있습니다.', href: 'https://www.instagram.com/pyeongtaek_urbansketch/', linkLabel: '활동 기록 보기' },
   { period: '2026.07 – 현재', title: '평면도 스튜디오', role: '평택시 문화예술 아카이브 웹진 에디터', description: '지역의 생활문화 및 문화예술교육 현장을 취재하고 아카이빙합니다.', href: 'https://www.pmd.co.kr/', linkLabel: '웹진 보기' },
   { period: '2026.07 – 현재', title: '평택시 시민기자단', role: '평택시 블로그 시민기자단', description: '지역에서 만난 사람, 장소, 활동을 취재하고 기사로 기록합니다.', href: 'https://m.blog.naver.com/pt_story/224412397687', linkLabel: '기사 보기' },
-  { period: '2026.07 – 10', title: '평생 레시피', role: '평택시 생활문화 매거진 에디터', description: '4호 매거진의 에디터로서 「혼자 있는 시간이 그림이 되다」 기사를 작성했습니다.', href: 'https://www.pmd.co.kr/mag4', linkLabel: '매거진 보기' },
+  { period: '2026.07 – 10', title: '평생 레시피', role: '평택시 생활문화 매거진 에디터', description: '평생 레시피 4호의 에디터로 참여하여 「혼자 있는 시간이 그림이 되다」 기사를 작성했습니다.', href: 'https://www.pmd.co.kr/mag4', linkLabel: '매거진 보기' },
 ];
 
 export default function Home() {
